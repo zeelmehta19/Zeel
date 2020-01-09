@@ -1,0 +1,181 @@
+<html>
+<head>
+<title>Home</title>
+<style>
+#grad{
+	height:1100px;
+	background: repeating-linear-gradient(45deg,rgb(255,221,238),rgb(255,198,226),rgb(255,170,213),rgb(255,151,203),rgb(255,130,192),rgb(255,106,181),rgb(255,83,169)15%,rgb(255,64,159)10%,rgb(255,40,148)2%);
+}
+#p1{
+	font-size:25px;
+	font-family:Arial serif;
+	text-shadow : 0 0 3px purple, 0 0 5px indigo;
+	color:white;
+}
+.dropdown{
+	position: relative;
+    display: inline-block;
+}
+.dropcontent{
+	display:none;
+	position:absolute;
+	margin:0;
+	padding :8px 8px; 
+	float:left;
+}
+.dropdown:hover .dropcontent{
+	display:block;
+}
+.a1{
+	text-align:center;
+	text-decoration:none;
+	background-color:rgb(255,255,193);
+}
+li a.active{
+	background-color:black;
+	color:white;	
+}
+ul.ula{
+	display:none;
+	list-style-type:none;
+	border: 1px solid blue;
+	border-radius:7px;
+	padding-left:0px;
+	overflow:hidden;
+	font-size:22px;
+	margin-top:13px;
+	margin-left:32px;
+	position:relative;
+	
+}
+li a{
+	padding:25px;
+	color:blue;
+	
+}
+li:last-child{
+	border-right:none;
+}
+
+li{
+	float:left;
+	border-right:1px solid blue;
+	<!-- border-radius:2px; -->
+	margin:0;
+}
+.diva{
+	display:none;
+	position:absolute;
+}
+.dropdown:hover ul{
+	display:block;
+}
+li a:hover:not(.active){
+	background-color:blue;
+	color:yellow;
+}
+.editpro{
+	border: 2px groove black;
+	
+	text-align:center;
+	margin-right:950px;
+	margin-left:15px;
+	float:left;
+	position:absolute;
+	font-size:23px;
+	padding:11px;
+}
+.marq{
+	margin-right:40px;
+	margin-left:300px;
+	border: none;
+	float:right;
+	position:relative;
+}
+.aa{
+	text-decoration:none;
+}
+.aa:hover{
+	text-decoration:underline;
+}
+.cart{
+	position:relative;
+	text-decoration:none;
+	background-color:rgb(158,158,158);
+	color:white;
+	width:100px;
+	margin-left:50px;
+	border-radius:8px;
+	margin-top:5px;
+	
+}
+.cartimage{
+	margin-top:8;
+	
+
+}
+.cartimage:hover .cart{
+	display:block;
+}
+
+</style>
+</head>
+<body>
+<div id="grad">
+<div style="color:yellow; height:90px; border-color:yellow; text-align:center; font-size:30px; padding-top:10px; padding-bottom:25px;
+ background-image:url(galaxy.jpg) ;">
+<h2><a href="Info.html" style="font-style:Italic; color:yellow; text-decoration:none;">Welcome to Shoppe's.com</a></h2></div>
+<marquee behavior="alternate" direction="right" SCROLLAMOUNT="7"><p id="p1">50% discount sale starts soon!!!! Hurry up, shopperssss :)</p></marquee>
+<div style="  float:left; color:red; font-size:30px; padding:5px;" class="dropdown">
+<img src="home.jpg" alt="Home" height="60px" width="70px" style="border-radius:50%"></img>
+<div style="float:right;">
+<ul class="ula">
+<li><a href="#" class="a1 active">Home</a></li>
+<li><a class="a1 a2" href="Shop.html">Shop</a></li>
+<li><a class="a1" href="Deals.html">Deals/Offers</a></li>
+<li><a class="a1" href="Shopping.php">Sign in</a></li>
+<li><a class="a1" href="CustomerSupport.html">Customer Support</a></li>
+<li><a class="a1" href="FAQ.html">FAQ & Help</a></li>
+<li><a class="a1" href="Info.html">About Us</a></li>
+</ul>
+</div>
+</div><br><br><br><br><br><br><br>
+<div class="floating">
+<div class="editpro">
+	<br><img src="profile.jpg" alt="No" width="60px" height="60px" style="border-radius:50%"></img>
+	<h3 style="text-shadow:0 0 6px white; color:rgb(0,128,128); font-size:25px; "><a class="aa"  href="EditPro.html">Edit your profile</a></h3>
+	<ul style="list-style-type:circle">
+		<li style="border:none">Choices</li><br>
+		<li style="border:none">Delivery location</li><br>
+		<li style="border:none">Notifications</li><br>
+		<li style="border:none">Account details</li><br>
+		<li style="border:none">Change account</li><br>
+		<li style="border:none">Log out</li><br>
+	</ul>
+	<a href="cart.php"><img src="cart.jpg" alt="No image" class="cartimage"></img></a><br><p class="cart">View cart</p>
+</div>
+
+<div class="marq">
+	<p style="font:Harlow solid italic,sans serif; font-size:36px; color:black; text-shadow:0 0 2px black,0 0 1px black; text-align:center;">Have a look at the latest millenial trends....</p>
+	<p style="font-size:20px;">Surely,these will set a trendy look to your daily life-style. The newest airport-look, party-look, wedding-look, office-look, casual-look, college-look, night-wears and what not are right here !!!</p><br><br> 
+	<marquee  behaviour="alternate" direction="left" scrollamount="10" onmouseenter="this.stop();" onmouseleave="this.start();">
+		<img src="a.jpg" alt="No img" height="456px" width="307px"></img>
+		<img src="b.jpg" alt="No img" height="456px" width="307px"></img>
+		<img src="c.jpg" alt="No img" height="456px" width="307px"></img>
+		<img src="d.jpg" alt="No img" height="456px" width="307px"></img>
+		<img src="e.jpg" alt="No img" height="456px" width="307px"></img>
+		<img src="f.jpg" alt="No img" height="456px" width="307px"></img>
+		<img src="g.jpg" alt="No img" height="456px" width="307px"></img>
+		<img src="h.jpg" alt="No img" height="456px" width="307px"></img>
+		<img src="i.jpg" alt="No img" height="456px" width="307px"></img>
+		<img src="j.jpg" alt="No img" height="456px" width="307px"></img>
+		<img src="k.jpg" alt="No img" height="456px" width="307px"></img>
+		<img src="l.jpg" alt="No img" height="456px" width="307px"></img>
+	</marquee>
+</div>
+
+</div>
+
+</div>
+</body>
+</html>

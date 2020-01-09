@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>Payment</title>
+<style>
+.div1{
+	color:white;
+	background-color:black;
+	
+	font-style:italic;
+	font-size:75px;
+	text-align:center;
+	padding:20px;
+}
+</style>
+<script>
+function OTP(){
+	alert(Math.floor((Math.random() * 10000) + 1));
+}
+function confirm(){
+	document.getElementById('tick').innerHTML="<img src='tick.jpg' alt='No image' style='border-radius:50%; width:100px; height:100px; margin-left:35px;'></img><br>Successfully completed";
+}
+</script>
+</head>
+<body>
+<div class="div1"><b>Shoppe's</b></div><br>
+<div style="text-align:center; color:red; font-size:55px; font-family:Lucida Calligraphy; text-shadow: 2px 2px yellow; padding-top:20px; padding-bottom:20px ">Payment</div>
+<fieldset style="background-color:rgba(192,192,192,0.3)">
+	<div >
+	Choose your payment option : 
+	<input type="radio" name="payment" value="creditcard">Credit card
+	<input type="radio" name="payment" value="debitcard">Debit card<br><br>
+	Enter your name:<br><br>
+	<input type="text" name="name"><br><br>
+	Enter your Account/Credit/Debit Card number :<br><br>
+	<input type="text" name="credit"><br><br>
+	Enter your mobile number to get an OTP :<br><br>
+	<input type="tel" name="tel"><br><br>
+	<button type="button" onclick="OTP()" style="background-color:#2196F3; width:85px; height:33px; float:left; color:white; border-radius:5px;">Send OTP</button>
+	<button type="button" onclick="OTP()" style="background-color:#2196F3; width:85px; height:33px; color:white; margin-left:10px; border-radius:5px;">Resend OTP</button><br><br>
+	Enter OTP :<input type="text" name="OTP1" style="margin-left:10px; width:35px; height:25px"><input type="text" name="OTP1" style="margin-left:10px; width:35px; height:25px"><input type="text" name="OTP1" style="margin-left:10px; width:35px; height:25px"><input type="text" name="OTP1" style="margin-left:10px; width:35px; height:25px"><br><br>
+	Enter the expiry details of your card :<br><br>
+	<select value="Expiry MM">
+	<option>January</option>
+	<option>February</option>
+	<option>March</option>
+	<option>April</option>
+	<option>May</option>
+	<option>June</option>
+	<option>July</option>
+	<option>August</option>
+	<option>September</option>
+	<option>October</option>
+	<option>November</option>
+	<option>December</option>
+	</select>
+	<input type="text" value="Expiry YY"><br><br>
+	<button type="button" onclick="confirm()" style="background-color:#2196F3; width:140px; height:39px; float:left; color:white; border-radius:5px;">Confirm payment   -></button>
+	<br><br><p id='tick'></p>
+	</div>
+</fieldset>
+</body>
+</html>

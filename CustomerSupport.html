@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>CustomerSupport</title>
+<style>
+.div1{
+	color:white;
+	background-color:black;
+	
+	font-style:italic;
+	font-size:75px;
+	text-align:center;
+	padding:20px;
+}
+body{
+	background-color:rgb(255,228,202);
+}
+button{
+	border-radius:50%;
+	border:1px solid black;
+	background-color:rgb(255,135,15);
+	width:15px;
+	height:15px;
+}
+</style>
+<script>
+	function a1(){
+		document.getElementById("a1").innerHTML="We endeavor to process your refunds within 7 business days from the date the returned<br> product clears the Q.C at the Warehouse . However, the refund<br> is subject to the transaction and processing time taken by the bank<br> after the NEFT is initiated by Shoppe's.";
+	}
+	function a2(){
+		document.getElementById("a2").innerHTML="Within 2 to 3 working days.<br>Note : Public holidays are not included";
+	}
+	function a3(){
+		document.getElementById("a3").innerHTML="credit card/debit card/netbanking and Cash on Delivery";
+	}
+	function a4(){
+		document.getElementById("a4").innerHTML="The maximum order value for a COD payment is Rs. 25,000.<br> You will have to pay the money to the delivery boy before you can open the package.<br> Please note, we do not accept foreign currency as payment against a COD order.";
+	}
+	function a5(){
+		document.getElementById("a5").innerHTML="With 'Cash on Delivery' or COD, you can pay us in<br> cash at the time of actual delivery of product at your doorstep,<br> without requiring you to make any advance payment on Shoppe's.";
+	}
+	function a6(){
+		document.getElementById("a6").innerHTML="Yes, shopping at Shoppe's is 100% safe.<br> All Credit card and Debit card payments on Shoppe's are processed through<br> secure and trusted payment gateways managed by leading Indian banks.<br>You can be assured that Shoppe's offers you the highest standards of security<br> currently available on the internet so as to ensure that your<br> shopping experience is private, safe and secure.";
+	}
+</script>
+</head>
+<body>
+<div class="div1"><b>Shoppe's</b></div><hr>
+<h1 style="font-style:italic; text-align:center; text-shadow: 0 0 5px rgb(179,29,163);">Customer Support</h1><br>
+<table align="center" cellspacing="5" cellpadding="28" border="2">
+	<tr>
+		<td>I want to return/exchange my order<p id="a1"></p></td>
+		<td><button type="button" onclick="a1()" ></button></td>
+	</tr>
+	<tr>
+		<td>When will I receive my order?<p id="a2"></p></td>
+		<td><button type="button" onclick="a2()"></button></td>
+	</tr>
+	<tr>
+		<td>What are the payment methods available on Shoppe's?<p id="a3"></p></td>
+		<td><button type="button" onclick="a3()" ></button></td>
+	</tr>
+	<tr>
+		<td>Are there any terms and conditions for a COD purchase?<p id="a4"></p></td>
+		<td><button type="button" onclick="a4()" ></button></td>
+	</tr>
+	<tr>
+		<td>What is Cash on Delivery?<p id="a5"></p></td>
+		<td><button type="button" onclick="a5()" ></button></td>
+	</tr>
+	<tr>
+		<td>Is it safe to use my Credit/Debit card on Shoppe's?<p id="a6"></td>
+		<td><button type="button" onclick="a6()" ></button></td>
+	</tr>
+</table>
+</body>
+</html>
